@@ -1,4 +1,4 @@
-for (let i = 1; i <= 200; i++) {
+for (let i = 1; i <= 255; i++) {
     let output = ""
     if (i % 3 == 0) {
         output += "Fizz"
@@ -15,6 +15,11 @@ for (let i = 1; i <= 200; i++) {
     if (i % 13 == 0) {
         let index = output.indexOf("B")
         output = index == -1 ? output + "Fezz" : output.slice(0, index) + "Fezz" + output.slice(index, output.length)
+    }
+    if (i % 17 == 0) {
+        let outputArr = output.split(/(?=[A-Z])/)
+        outputArr.reverse()
+        output = outputArr.join('')
     }
     console.log(output.length ? output : i)
 }
