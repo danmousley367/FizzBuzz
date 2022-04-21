@@ -1,4 +1,7 @@
-for (let i = 1; i <= 255; i++) {
+let prompt = require('prompt-sync')()
+let maxValue = prompt('Enter a number to run the function up to: ')
+
+for (let i = 1; i <= maxValue; i++) {
     let output = ""
     if (i % 3 == 0) {
         output += "Fizz"

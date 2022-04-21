@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/danmousley367/FizzBuzz/issues"
   },
-  "homepage": "https://github.com/danmousley367/FizzBuzz#readme"
+  "homepage": "https://github.com/danmousley367/FizzBuzz#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
